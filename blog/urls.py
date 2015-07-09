@@ -11,4 +11,5 @@ para ir, se alguém entra em seu site no endereço 'http://127.0.0.1:8000 /'.
 
 urlpatterns = [
 	url(r'^$', views.post_list),
+	url(r'^post/(?P<pk>[0-9]+)/$', views.post_detail),
 ]
